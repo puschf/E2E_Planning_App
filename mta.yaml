@@ -9,7 +9,7 @@ build-parameters:
   before-all:
     - builder: custom
       commands:
-        - npm ci
+        - npm install
         - npx cds build --production
 modules:
   - name: PlanningApp-srv
@@ -110,7 +110,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
@@ -121,7 +121,7 @@ modules:
       build-result: dist
       builder: custom
       commands:
-        - npm ci
+        - npm install
         - npm run build
       supported-platforms:
         []
